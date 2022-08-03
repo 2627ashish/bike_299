@@ -68,7 +68,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:9992/userlogin',
+            url: 'https://gentle-garden-37828.herokuapp.com/userlogin',
             headers: { 'Content-Type': 'application/json' },
             data: loginObj
         })
@@ -96,7 +96,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:9992/userSignUp',
+            url: 'https://gentle-garden-37828.herokuapp.com/userSignUp',
             headers: { 'Content-Type': 'application/json' },
             data: signupobj
         })

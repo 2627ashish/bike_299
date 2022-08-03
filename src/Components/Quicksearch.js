@@ -17,7 +17,7 @@ class Quicksearch extends React.Component {
     componentDidMount() {
         axios({
             method: 'GET',
-            url: 'http://localhost:9992/parttypes',
+            url: 'https://gentle-garden-37828.herokuapp.com/parttypes',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({ parttypes: response.data.pats })

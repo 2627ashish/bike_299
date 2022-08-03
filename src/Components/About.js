@@ -16,7 +16,7 @@ class About extends React.Component {
         sessionStorage.clear();
         axios({
             method: 'GET',
-            url: 'http://localhost:9992/about',
+            url: 'https://gentle-garden-37828.herokuapp.com/about',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({ content: response.data.about })

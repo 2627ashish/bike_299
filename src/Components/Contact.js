@@ -26,7 +26,7 @@ class Contact extends React.Component {
         sessionStorage.clear();
         axios({
             method: 'GET',
-            url: 'http://localhost:9992/locations',
+            url: 'https://gentle-garden-37828.herokuapp.com/locations',
             headers: { 'Content-Type': 'application/json' }
         }).then(response => {
             this.setState({ locations: response.data.locations })
@@ -54,7 +54,7 @@ class Contact extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:9992/feedBack',
+            url: 'https://gentle-garden-37828.herokuapp.com/feedBack',
             headers: { 'Content-Type': 'application/json' },
             data: feedobj
         })

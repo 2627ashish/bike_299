@@ -54,7 +54,7 @@ class Book extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:9992/feedBack',
+            url: 'https://gentle-garden-37828.herokuapp.com/feedBack',
             headers: { 'Content-Type': 'application/json' },
             data: Bookobj
         })

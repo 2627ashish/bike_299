@@ -50,7 +50,7 @@ class Parts extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:9992/saveOrder',
+            url: 'https://gentle-garden-37828.herokuapp.com/saveOrder',
             headers: { 'Content-Type': 'application/json' },
             data: Orders
         })
